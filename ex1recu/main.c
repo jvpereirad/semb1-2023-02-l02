@@ -160,7 +160,7 @@ int main(int argc, char *argv[])
   *pGPIOC_PUPDR = reg;
 
 
-  /* Configura PA0 como saida pull-up off e pull-down off */
+  /* Configura PA0 */
   reg = *pGPIOA_MODER;
   reg &= ~GPIO_MODER_MASK(0);
   reg |= (GPIO_MODER_INPUT << GPIO_MODER_SHIFT(0));
